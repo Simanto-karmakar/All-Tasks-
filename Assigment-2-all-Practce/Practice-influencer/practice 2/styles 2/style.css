@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #ffffff;
+
+}
+
+/*---------------------- header part----------------------- */
+.heading {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 80px;
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 24px;
+    color: #3a3a3a;
+
+}
+
+ul li {
+    display: inline-block;
+}
+
+ul li a {
+    margin-right: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    color: #3a3a3a;
+
+}
+
+/* ------------------------header end---------------------------- */
+/* -------------------------main part start--------------------- */
+.influencer {
+    display: flex;
+    padding: 40px 80px;
+    justify-content: space-around;
+}

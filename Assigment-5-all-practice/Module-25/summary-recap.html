@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recap Summary Event</title>
+</head>
+
+<body>
+    <h1>Final Dom event handler</h1>
+    <h3 id="defult-text">Defult Text</h3>
+    <p id="input-text-display">Defult input text</p>
+    <input id="input-field" type="text">
+    <button id="btn-update">Update</button>
+    <br>
+    <br>
+    <button onclick="handleOnClick()">Handled event by onclick function</button>
+    <button id="event-listner">handel event by addlistner</button>
+
+    <script>
+        function handleOnClick() {
+            const defultText = document.getElementById('defult-text');
+            defultText.innerText = 'handle by function attached by onclick'
+        };
+
+        document.getElementById('event-listner').addEventListener('click', function () {
+            const defultText = document.getElementById('defult-text');
+            defultText.innerText = 'handle click by addeventlistner'
+        });
+
+        document.getElementById('btn-update').addEventListener('click', function () {
+            const inputField = document.getElementById('input-field');
+            const inputText = inputField.value;
+
+            const inputTextDisplay = document.getElementById('input-text-display');
+            inputTextDisplay.innerText = inputText;
+            inputField.value = '';
+        })
+
+    </script>
+</body>
+
+</html>
